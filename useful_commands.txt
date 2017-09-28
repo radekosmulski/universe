@@ -1,0 +1,14 @@
+# commands that I find useful but always forget
+
+# shred keys
+sudo shred -u /etc/ssh/*_key /etc/ssh/*_key.pub
+
+# replace all occurances of a string in multiple files recursively in a
+directory
+grep -rl matchstring somedir/ | xargs sed -i 's/string1/string2/g'
+
+# enable 2nd monitor
+xrandr --output VGA1 --mode 1920x1080 --right-of eDP1
+
+# create validation set in bash
+shuf -n 5000 -e all/*.* | xargs -i mv {} all_val/
