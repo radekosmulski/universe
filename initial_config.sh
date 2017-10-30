@@ -1,7 +1,10 @@
 #!/bin/bash
 
+sudo apt-get update
+sudo apt-get --assume-yes upgrade
 sudo apt remove -y vim
 sudo apt install -y vim-gnome htop
+sudo apt --assume-yes autoremove
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "set rtp+=~/.vim/bundle/Vundle.vim" >> ~/.vimrc
 echo "call vundle#begin()" >> ~/.vimrc
