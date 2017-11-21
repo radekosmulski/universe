@@ -14,4 +14,4 @@ xrandr --output VGA1 --mode 1920x1080 --right-of eDP1
 shuf -n 5000 -e all/*.* | xargs -i mv {} all_val/
 
 # connecting via ssh and extablishing a tunnel with autossh
-autossh -M 0 -o ServerAliveInterval 30 -o ServerAliveCountMax 3 -i <private key> <user>@<host> -L <local port>:<host>:<port on host>
+autossh -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax 3' -i <private key> <user>@<host> -L <local port>:<host>:<port on host>
