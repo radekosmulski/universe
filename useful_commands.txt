@@ -15,3 +15,6 @@ shuf -n 5000 -e all/*.* | xargs -i mv {} all_val/
 
 # connecting via ssh and extablishing a tunnel with autossh
 autossh -M 0 -o 'ServerAliveInterval 30' -o 'ServerAliveCountMax 3' -i <private key> <user>@<host> -L <local port>:<host>:<port on host>
+
+# creating a filesystem with double inode size and no lazy initialization
+sudo mkfs -t ext4 -E lazy_itable_init=0,lazy_journal_init=0 -I 256 /dev/sdXN
