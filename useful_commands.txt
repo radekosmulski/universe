@@ -24,3 +24,9 @@ ls -1 | xargs -i p7zip -d {}
 
 # cmd for reading the entire disk - useful for initialization after restoring snapshot on AWS
 dd if=/dev/xvda of=/dev/null bs=1M
+
+# https://stackoverflow.com/a/36343325
+# set vbox machinefolder
+VBoxManage setproperty machinefolder /my_custom_path
+vagrant up
+VBoxManage setproperty machinefolder default
