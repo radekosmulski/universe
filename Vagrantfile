@@ -12,9 +12,11 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "ubuntu/bionic64"
 
   config.vm.provision :shell, path: 'config_scripts/basic.sh', privileged: false
+  config.vm.provision :shell, path: 'config_scripts/ruby.sh', privileged: false
+  config.vm.provision :shell, path: 'config_scripts/tmuxinator.sh', privileged: false
   #config.vm.provision :shell, path: 'config_scripts/rails.sh', privileged: false
 
   # might need to run `ssh-add` on host
