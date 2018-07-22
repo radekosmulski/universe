@@ -6,7 +6,7 @@ sudo apt install -y vim-gnome htop x11-xkb-utils autossh
 sudo apt --assume-yes autoremove
 
 # Begin vim config
-sudo apt-get install fonts-powerline # required on the machine running the terminal
+sudo apt-get -y install fonts-powerline # required on the machine running the terminal
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "set rtp+=~/.vim/bundle/Vundle.vim" >> ~/.vimrc
 echo "call vundle#begin()" >> ~/.vimrc
