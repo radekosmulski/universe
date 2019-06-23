@@ -7,7 +7,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install yarn
 
 sudo apt-get install -y postgresql-common postgresql libpq-dev
-sudo -u postgres createuser -s ubuntu
+sudo -u postgres createuser -s radek
 
 gem update --system --no-ri --no-rdoc
-gem install rails --version=5.1.1 --no-ri --no-rdoc
+gem install rails --version=6.0.0.rc1
