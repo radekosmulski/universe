@@ -2,7 +2,7 @@
 sudo apt-get update
 sudo apt-get --assume-yes upgrade
 sudo apt remove -y vim
-sudo apt install -y vim-gnome htop x11-xkb-utils autossh
+sudo apt install -y vim-gnome htop x11-xkb-utils autossh tmux
 sudo apt --assume-yes autoremove
 
 # Begin vim config
