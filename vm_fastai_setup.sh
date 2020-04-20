@@ -27,3 +27,5 @@ mkdir setup_scripts && cd setup_scripts
 wget https://raw.githubusercontent.com/radekosmulski/universe/master/config_scripts/basic.sh && bash basic.sh
 wget https://raw.githubusercontent.com/radekosmulski/universe/master/config_scripts/basic_agent_forwarding_required.sh && bash basic_agent_forwarding_required.sh
 cd ..
+
+sudo apt install bmon
