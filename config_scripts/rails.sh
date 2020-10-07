@@ -1,5 +1,5 @@
 sudo apt-get install -y curl
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -11,4 +11,4 @@ sudo apt-get install -y postgresql-common postgresql libpq-dev
 sudo -u postgres createuser -s radek
 
 gem update --system --no-ri --no-rdoc
-gem install rails --version=6.0.0.rc1
+gem install rails #--version=6.0.0.rc1
