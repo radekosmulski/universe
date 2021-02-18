@@ -11,6 +11,9 @@ sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install gh
 
+# enable shutdown / reboot without sudo
+echo '%group_name ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown' | sudo EDITOR='tee -a' visudo
+
 # Begin vim config
 sudo apt-get -y install fonts-powerline # required on the machine running the terminal
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
