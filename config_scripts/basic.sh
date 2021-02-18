@@ -5,6 +5,12 @@ sudo apt remove -y vim
 sudo apt install -y vim-gtk3 htop x11-xkb-utils autossh tmux git
 sudo apt --assume-yes autoremove
 
+# Install gh cli
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
+
 # Begin vim config
 sudo apt-get -y install fonts-powerline # required on the machine running the terminal
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
