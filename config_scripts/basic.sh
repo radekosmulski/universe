@@ -2,7 +2,7 @@
 sudo apt-get update
 sudo apt-get --assume-yes upgrade
 sudo apt remove -y vim
-sudo apt install -y vim-gtk3 htop x11-xkb-utils autossh tmux git exuberant-ctags
+sudo apt install -y vim-gtk3 htop x11-xkb-utils autossh tmux git exuberant-ctags unzip
 sudo apt --assume-yes autoremove
 
 # Install gh cli
