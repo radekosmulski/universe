@@ -9,7 +9,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Get ruby and bundler
-rbenv install 2.7.2
-rbenv global 2.7.2
+rbenv install 3.1.2
+rbenv global 3.1.2
 gem install bundler
 rbenv rehash
